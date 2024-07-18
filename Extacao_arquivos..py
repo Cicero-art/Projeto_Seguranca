@@ -37,9 +37,6 @@ for file_name in os.listdir(folder_path):
 # Concatenar todos os dataframes
 df_final = pd.concat(dataframes, ignore_index=True)
 
-# Exibir os primeiros registros para verificação
-print(df_final.head())
-
 # Salvar o dataframe final em um novo arquivo
 output_file_path = r'C:\Users\cicero.neto\Documents\Analise_projeto_delegacia\Dados_Processados.xlsx'
 df_final.to_excel(output_file_path, index=False)
